@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Group type="102" alignment="2" attributes="0">
+                      <Component id="btnGuess" linkSize="2" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnNewNumber" linkSize="2" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="lblRange" linkSize="1" alignment="2" min="-2" pref="280" max="-2" attributes="0"/>
+                  <Group type="102" alignment="2" attributes="0">
+                      <Component id="lblInputGuess" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txtInputGuess" min="-2" pref="67" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="lblResultMsg" linkSize="1" alignment="2" max="32767" attributes="0"/>
+                  <Group type="102" alignment="2" attributes="0">
+                      <Component id="lblHighest" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="5" pref="5" max="5" attributes="0"/>
+                      <Component id="spHighest" linkSize="3" min="-2" pref="66" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="2" attributes="0">
+                      <Component id="lblLowest" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="7" pref="7" max="7" attributes="0"/>
+                      <Component id="spLowest" linkSize="3" min="-2" pref="59" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="spHighest" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblHighest" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="spLowest" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblLowest" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+              <Component id="lblRange" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtInputGuess" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblInputGuess" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnGuess" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnNewNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="lblResultMsg" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JTextField" name="txtInputGuess">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtInputGuessActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnGuess">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Guess"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuessActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblRange">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="Guess a number between 1 and 100."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblInputGuess">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Your guess:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblResultMsg">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="You are correct!"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JSpinner" name="spHighest">
+    </Component>
+    <Component class="javax.swing.JSpinner" name="spLowest">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblHighest">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Highest"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblLowest">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Lowest"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnNewNumber">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="New Number"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNewNumberActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
